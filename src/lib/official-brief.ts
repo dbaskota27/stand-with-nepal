@@ -21,6 +21,8 @@ const BIPAD_INCIDENT =
 const NDRRMA_BULLETINS =
   "https://ndrrma.gov.np/api/v1/bulletin/bulletins/?ordering=-id&limit=6";
 const IFRC_EVENT = "https://goadmin.ifrc.org/api/v2/event/8073/";
+const WIKI_PAGE =
+  "https://en.wikipedia.org/w/api.php?action=parse&page=2026_Nepal_floods&prop=wikitext&format=json";
 const CACHE_MS = 10 * 60 * 1000;
 const FETCH_MS = 8000;
 
@@ -104,6 +106,22 @@ function ifrcCandidate(event: Record<string, unknown>): LiveCandidate | null {
   };
 }
 
+
+function parseWikiNepal(wikitext: string): Partial<CasualtySnapshot> {
+  const out: Partial<CasualtySnapshot> = {};
+  const dead = wikitext.match(
+    /deaths\s*=[\s\S]{0,280}?(\d{2,4})\+?\s+in Nepal/i,
+  );
+  const missing = wikitext.match(
+    /missing\s*=[\s\S]{0,280}?([\d,]{3,6})\+?\s+in Nepal/i,
+  );
+  const d = Number(dead?.[1]);
+  const m = Number(String(missing?.[1] || "").replace(/,/g, ""));
+  if (d >= 20 && d <= 10000) out.dead = d;
+  if (m >= 20 && m <= 50000) out.missing = m;
+  return out;
+}
+
 async function loadOfficialBrief(): Promise<OfficialBrief> {
   const now = Date.now();
   if (cache && now - cache.at < CACHE_MS) return cache.data;
@@ -113,11 +131,12 @@ async function loadOfficialBrief(): Promise<OfficialBrief> {
   let ifrcUpdatedAt: string | null = null;
   const raw: BipadAlert[] = [];
 
-  const [alertSettled, bipadInc, ndrrma, ifrc] = await Promise.allSettled([
+  const [alertSettled, bipadInc, ndrrma, ifrc, wiki] = await Promise.allSettled([
     Promise.allSettled(SEARCHES.map((q) => fetchAlertsFor(q))),
     fetchJson(BIPAD_INCIDENT),
     fetchJson(NDRRMA_BULLETINS),
     fetchJson(IFRC_EVENT),
+    fetchJson(WIKI_PAGE),
   ]);
 
   if (alertSettled.status === "fulfilled") {
@@ -177,6 +196,22 @@ async function loadOfficialBrief(): Promise<OfficialBrief> {
     if (typeof event.updated_at === "string") ifrcUpdatedAt = event.updated_at;
     const cand = ifrcCandidate(event);
     if (cand) candidates.push(cand);
+  }
+
+  if (wiki.status === "fulfilled" && wiki.value && typeof wiki.value === "object") {
+    const wt =
+      (wiki.value as { parse?: { wikitext?: { "*": string } } }).parse?.wikitext?.[
+        "*"
+      ] || "";
+    const parsed = parseWikiNepal(wt);
+    if (parsed.dead || parsed.missing) {
+      live = true;
+      candidates.push({
+        counts: parsed,
+        source: "Nepal Police / NDRRMA",
+        asOf: new Date().toISOString(),
+      });
+    }
   }
 
   const casualties = mergeCasualties(POLICE_SNAPSHOT, candidates);
