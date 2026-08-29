@@ -3,18 +3,18 @@ export const PAGE_TITLE = "Stand With Nepal — Flash Flood Relief 2026";
 export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
-export const UPDATED_ON = "28 August 2026";
-export const FIGURES_AS_OF = "28 August 2026, 3:00 p.m. NPT";
-export const FIGURES_SOURCE = "Nepal Police";
+export const UPDATED_ON = "29 August 2026";
+export const FIGURES_AS_OF = "28 August 2026, evening NPT";
+export const FIGURES_SOURCE = "Nepal Police / NDRRMA";
 export const FIGURES_NOTE =
-  "Nepal Police HQ bulletin as of 3:00 p.m. Friday 28 August. Deaths, missing, and injured are from the same official table. All three numbers are still changing.";
+  "Nepal Police and NDRRMA figures as of 28 August evening. Confirmed dead 579, missing 1,924. Injured still from the last police table (73) until a newer injured count is published. All numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Nepal Police have confirmed 538 deaths, with 1,026 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official figures: 579 deaths, with 1,924 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "538", label: "Confirmed dead" },
-  { value: "1,026", label: "Missing" },
+  { value: "579", label: "Confirmed dead" },
+  { value: "1,924", label: "Missing" },
   { value: "73", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
 ] as const;
@@ -156,6 +156,10 @@ export const sources = [
   {
     label: "Nepal Police HQ bulletin, 3:00 p.m. 28 Aug",
     href: "https://x.com/NepalPoliceHQ/status/2093280482939339145",
+  },
+  {
+    label: "UPI — death toll 579, more than 1,900 missing, 28 Aug",
+    href: "https://www.upi.com/Top_News/World-News/2026/08/28/nepal-flash-flood-579-dead/2171787929221/",
   },
   {
     label: "Nepal Police unidentified bodies",
