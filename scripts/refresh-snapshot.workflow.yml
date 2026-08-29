@@ -1,0 +1,36 @@
+name: Refresh casualty snapshot
+
+on:
+  schedule:
+    # Every 2 hours, including nights and weekends — active disaster.
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-snapshot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Pull official totals
+        run: node scripts/refresh-snapshot.mjs
+      - name: Commit if the snapshot rose
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/lib/casualties.ts src/data/relief.ts
+          if git diff --cached --quiet; then
+            echo "No snapshot change."
+            exit 0
+          fi
+          git commit -m "chore: refresh flood casualty snapshot from official sources"
+          git push
