@@ -29,7 +29,7 @@ Then open the URL printed in the terminal.
 
 ## Keep figures current
 
-A GitHub Action (`.github/workflows/refresh-snapshot.yml`) runs every 2 hours and on demand. It pulls BIPAD, NDRRMA, IFRC, and the Wikipedia infobox for this disaster (Nepal-only counts, cited to wire reports of Nepal Police / NDRRMA), then raises the hardcoded snapshot in `src/lib/casualties.ts` and `src/data/relief.ts` if official totals have gone up. It never lowers a number. If nothing is higher, it makes no commit.
+The Action yaml is in `scripts/refresh-snapshot.workflow.yml` (GitHub blocks this token from writing `.github/workflows/`). Copy that file to `.github/workflows/refresh-snapshot.yml` after merge. It runs every 2 hours and on demand. It pulls BIPAD, NDRRMA, IFRC, and the Wikipedia infobox for this disaster (Nepal-only counts, cited to wire reports of Nepal Police / NDRRMA), then raises the hardcoded snapshot in `src/lib/casualties.ts` and `src/data/relief.ts` if official totals have gone up. It never lowers a number. If nothing is higher, it makes no commit.
 
 After you merge the workflow, set the repo's Actions permissions to **Read and write** so the bot can push snapshot commits (Settings → Actions → General → Workflow permissions).
 
