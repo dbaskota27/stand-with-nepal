@@ -11,11 +11,11 @@ export type CasualtySnapshot = CasualtyCounts & {
 };
 
 export const POLICE_SNAPSHOT: CasualtySnapshot = {
-  dead: 579,
+  dead: 626,
   missing: 1924,
   injured: 73,
-  source: "Nepal Police / NDRRMA",
-  asOf: "2026-08-28T18:00:00+05:45",
+  source: "Wikipedia infobox (Nepal only) / NDRRMA",
+  asOf: "2026-08-29T10:53:00+05:45",
   live: false,
 };
 
