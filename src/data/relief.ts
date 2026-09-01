@@ -3,18 +3,18 @@ export const PAGE_TITLE = "Stand With Nepal — Flash Flood Relief 2026";
 export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
-export const UPDATED_ON = "31 August 2026";
-export const FIGURES_AS_OF = "31 August 2026, 19:50 NPT";
-export const FIGURES_SOURCE = "NDRRMA via BBC / The Hindu (Nepal-only)";
+export const UPDATED_ON = "1 September 2026";
+export const FIGURES_AS_OF = "1 September 2026, 9:36 p.m. NPT";
+export const FIGURES_SOURCE = "NDRRMA / Nepal Police (Nepal-only)";
 export const FIGURES_NOTE =
-  "NDRRMA (via BBC / The Hindu): 939 dead (Nepal-only). Missing held at prior official peak 4,247 (NDRRMA revised to 3,925; counts only move up). Injured held at prior official peak 1,473. Rechecked 31 August, 19:50 NPT.";
+  "Latest snapshot 1 September 2026, 9:36 p.m. NPT. Confirmed dead 1,050, missing 4,247, injured 1,473. Missing is held at the official peak; Wikipedia currently lists a lower missing count. Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 939 deaths, with 4,247 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,050 deaths, with 4,247 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
 https://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "939", label: "Confirmed dead" },
+  { value: "1,050", label: "Confirmed dead" },
   { value: "4,247", label: "Missing" },
   { value: "1,473", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
