@@ -150,57 +150,33 @@ export function PhotoGallery() {
           What the flood left behind
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
-          Photographs from international news coverage of the 26 August 2026
-          disaster. Tap any image to view it larger. Credits link to the original
-          reports.
+          Photographs from the 26 August 2026 disaster, plus satellite before/after
+          of the same river corridor. Tap any image to view it larger. Credits
+          link to the originals.
         </p>
 
         <div className="mt-8 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
-          <Thumb
-            photo={photos[0]}
-            onOpen={() => setOpen(0)}
-            className="col-span-2 aspect-[16/10] md:row-span-2 md:aspect-auto md:h-full"
-          />
-          <Thumb
-            photo={photos[1]}
-            onOpen={() => setOpen(1)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[2]}
-            onOpen={() => setOpen(2)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[3]}
-            onOpen={() => setOpen(3)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[4]}
-            onOpen={() => setOpen(4)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[5]}
-            onOpen={() => setOpen(5)}
-            className="col-span-2 aspect-[16/10]"
-          />
-          <Thumb
-            photo={photos[6]}
-            onOpen={() => setOpen(6)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[7]}
-            onOpen={() => setOpen(7)}
-            className="aspect-[4/3]"
-          />
-          <Thumb
-            photo={photos[8]}
-            onOpen={() => setOpen(8)}
-            className="col-span-2 aspect-[16/9] md:col-span-4"
-          />
+          {photos.map((photo, i) => {
+            let className = "aspect-[4/3]";
+            if (i === 0) {
+              className =
+                "col-span-2 aspect-[16/10] md:row-span-2 md:aspect-auto md:h-full";
+            } else if (i === 5) {
+              className = "col-span-2 aspect-[16/10]";
+            } else if (i === 8) {
+              className = "col-span-2 aspect-[16/9] md:col-span-4";
+            } else if (i >= 9) {
+              className = "col-span-2 aspect-[16/10] md:col-span-2";
+            }
+            return (
+              <Thumb
+                key={photo.src}
+                photo={photo}
+                onOpen={() => setOpen(i)}
+                className={className}
+              />
+            );
+          })}
         </div>
       </div>
 
