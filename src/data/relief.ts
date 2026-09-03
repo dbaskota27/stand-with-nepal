@@ -92,6 +92,27 @@ export const photos: Photo[] = [
     credit: "Al Jazeera",
     href: "https://www.aljazeera.com/gallery/2026/8/26/photos-avalanche-floods-kill-eight-hundreds-missing-in-nepals-himalayas",
   },
+  {
+    src: "/photos/before-corridor.jpg",
+    alt: "Satellite view of the Trishuli and Bhotekoshi river corridor on 12 August 2026, two weeks before the flood, showing a narrow river through green Himalayan hills",
+    caption: "Before — 12 August 2026. Copernicus Sentinel-2: the river is still a narrow thread through green hills.",
+    credit: "Copernicus Sentinel-2 / ESA",
+    href: "https://commons.wikimedia.org/wiki/File:Nepal_floods_before_-_20260812.png",
+  },
+  {
+    src: "/photos/after-corridor.jpg",
+    alt: "Satellite view of the same Himalayan valley on 26 August 2026, hours after the flood, with a pale debris path replacing the river corridor",
+    caption: "After — 26 August 2026. Landsat-9 about two hours after the glacier collapse. The valley is a pale debris path.",
+    credit: "USGS Landsat-9",
+    href: "https://commons.wikimedia.org/wiki/File:Landsat_Nepal_flood_2026-08-26.png",
+  },
+  {
+    src: "/photos/gyirong-cctv.jpg",
+    alt: "CCTV still of mud and debris racing through Gyirong Port looking downstream on 26 August 2026",
+    caption: "CCTV at Gyirong Port as the debris flood hits the border crossing, 26 August 2026.",
+    credit: "Public domain CCTV still (via Wikimedia Commons)",
+    href: "https://commons.wikimedia.org/wiki/File:Mudslide_at_Gyirong_Port_2_(screenshot).png",
+  },
 ];
 
 export const DONATE_URL = "https://pmdrf.nchl.com.np/";
