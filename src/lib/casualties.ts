@@ -12,10 +12,10 @@ export type CasualtySnapshot = CasualtyCounts & {
 
 export const POLICE_SNAPSHOT: CasualtySnapshot = {
   dead: 1252,
-  missing: 4858,
+  missing: 4875,
   injured: 1473,
-  source: "Nepal Police HQ (Nepal-only, 10 a.m. 3 Sept 2026)",
-  asOf: "2026-09-03T10:00:00+05:45",
+  source: "Nepal Police HQ (Nepal-only, 3 Sept 2026)",
+  asOf: "2026-09-03T12:30:00+05:45",
   live: false,
 };
 
