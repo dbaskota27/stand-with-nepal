@@ -5,9 +5,9 @@ export const PAGE_DESCRIPTION =
 
 export const UPDATED_ON = "4 September 2026";
 export const FIGURES_AS_OF = "4 September 2026, afternoon NPT";
-export const FIGURES_SOURCE = "Nepal Police (Nepal-only)";
+export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 4 September 2026, afternoon NPT. Confirmed dead 1,293, missing 5,083, injured 5,384. Nepal Police via Spokesperson Abi Narayan Kafle (Nepal News); district recoveries including 18 bodies found in India handed to Nawalparasi West. Missing held at prior NDRRMA floor of 5,083 (police missing 4,898 — never lower). Numbers are still changing.";
+  "Latest snapshot 4 September 2026, afternoon NPT. Confirmed dead 1,293, missing 5,083, injured 5,397. Dead from Nepal Police Spokesperson Abi Narayan Kafle (Nepal News) district recoveries including 18 bodies found in India handed to Nawalparasi West. Missing held at prior NDRRMA floor of 5,083 (police missing 4,898 — never lower). Injured raised to NDRRMA afternoon floor of 5,397 (Karobar / Himalaya Times / Nepal News). Numbers are still changing.";
 
 export const SHARE_TEXT =
   "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,293 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
@@ -16,7 +16,7 @@ https://pmdrf.nchl.com.np/";
 export const stats = [
   { value: "1,293", label: "Confirmed dead" },
   { value: "5,083", label: "Missing" },
-  { value: "5,384", label: "Injured" },
+  { value: "5,397", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
 ] as const;
 
