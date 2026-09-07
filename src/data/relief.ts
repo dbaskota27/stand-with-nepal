@@ -3,11 +3,11 @@ export const PAGE_TITLE = "Stand With Nepal — Flash Flood Relief 2026";
 export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
-export const UPDATED_ON = "6 September 2026";
-export const FIGURES_AS_OF = "6 September 2026, 20:00 NPT";
+export const UPDATED_ON = "7 September 2026";
+export const FIGURES_AS_OF = "7 September 2026, 05:00 NPT";
 export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 6 September 2026, 20:00 NPT. Confirmed dead 1,351, missing 5,083, injured 6,075. Dead raised to 1,351 from Nepal Police news/10341 as of Sunday 20:00 NPT (district sum Rasuwa 169 + Nuwakot 196 + Dhading 69 + Chitwan 362 + Gorkha 74 + Tanahun 38 + Nawalparasi East 222 + West 221 = 1,351). Missing held at prior floor of 5,083 (police 3,992 — never lower). Injured held at 6,075 (NDRRMA treated via Rising Nepal/RSS as of 11:00 NPT Sunday). Numbers are still changing.";
+  "Latest snapshot 7 September 2026, 05:00 NPT. Confirmed dead 1,351, missing 5,083, injured 6,083. Dead held at 1,351 from Nepal Police news/10342 as of Monday 05:00 NPT (district sum Rasuwa 169 + Nuwakot 196 + Dhading 69 + Chitwan 362 + Gorkha 74 + Tanahun 38 + Nawalparasi East 222 + West 221 = 1,351). Missing held at prior floor of 5,083 (police 3,992 — never lower). Injured raised to 6,083 (NDRRMA treated via Aaja ko Press / NDRRMA Sunday evening update; prior Rising Nepal/RSS 6,075 at 11:00 NPT Sunday). Numbers are still changing.";
 
 export const SHARE_TEXT =
   "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,351 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
@@ -16,7 +16,7 @@ https://pmdrf.nchl.com.np/";
 export const stats = [
   { value: "1,351", label: "Confirmed dead" },
   { value: "5,083", label: "Missing" },
-  { value: "6,075", label: "Injured" },
+  { value: "6,083", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
 ] as const;
 
