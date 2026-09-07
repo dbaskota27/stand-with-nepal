@@ -4,17 +4,17 @@ export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
 export const UPDATED_ON = "7 September 2026";
-export const FIGURES_AS_OF = "7 September 2026, 17:59 NPT";
-export const FIGURES_SOURCE = "NDRRMA + Nepal Police (Nepal-only)";
+export const FIGURES_AS_OF = "7 September 2026, 20:00 NPT";
+export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 7 September 2026, 17:59 NPT. Confirmed dead 1,355, missing 5,083, injured 6,672. Injured raised to 6,672 from NDRRMA via Rising Nepal/RSS (medical treatment received). Dead held at 1,355 (NDRRMA spokesperson Shanti Mahat district sum Rasuwa 169 + Nuwakot 197 + Dhading 70 + Chitwan 363 + Gorkha 75 + Tanahun 38 + Nawalparasi East 222 + West 221). Missing held at prior floor of 5,083 (NDRRMA ~4,996 / police news/10345 Mon 14:00 NPT 4,077 — never lower). Wikipedia Nepal-only 1,342/4,886 below. Numbers are still changing.";
+  "Latest snapshot 7 September 2026, 20:00 NPT. Confirmed dead 1,356, missing 5,083, injured 6,672. Dead raised to 1,356 from Nepal Police news/10352 as of Monday 20:00 NPT (district sum Rasuwa 169 + Nuwakot 196 + Dhading 70 + Chitwan 363 + Gorkha 75 + Tanahun 38 + Nawalparasi East 223 + West 222). Missing held at prior floor of 5,083 (police 4,077 — never lower). Injured held at 6,672 (NDRRMA via Rising Nepal/RSS medical treatment). Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,355 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,356 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
 https://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "1,355", label: "Confirmed dead" },
+  { value: "1,356", label: "Confirmed dead" },
   { value: "5,083", label: "Missing" },
   { value: "6,672", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
