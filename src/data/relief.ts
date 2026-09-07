@@ -4,17 +4,17 @@ export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
 export const UPDATED_ON = "7 September 2026";
-export const FIGURES_AS_OF = "7 September 2026, 05:00 NPT";
+export const FIGURES_AS_OF = "7 September 2026, 10:45 NPT";
 export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 7 September 2026, 05:00 NPT. Confirmed dead 1,351, missing 5,083, injured 6,083. Dead held at 1,351 from Nepal Police news/10342 as of Monday 05:00 NPT (district sum Rasuwa 169 + Nuwakot 196 + Dhading 69 + Chitwan 362 + Gorkha 74 + Tanahun 38 + Nawalparasi East 222 + West 221 = 1,351). Missing held at prior floor of 5,083 (police 3,992 — never lower). Injured raised to 6,083 (NDRRMA treated via Aaja ko Press / NDRRMA Sunday evening update; prior Rising Nepal/RSS 6,075 at 11:00 NPT Sunday). Numbers are still changing.";
+  "Latest snapshot 7 September 2026, 10:45 NPT. Confirmed dead 1,354, missing 5,083, injured 6,083. Dead raised to 1,354 from Nepal Police news/10342 as of Monday 10:45 NPT (district sum Rasuwa 169 + Nuwakot 196 + Dhading 70 + Chitwan 363 + Gorkha 75 + Tanahun 38 + Nawalparasi East 222 + West 221 = 1,354). Missing held at prior floor of 5,083 (police 4,077 — never lower). Injured held at 6,083 (NDRRMA treated; no higher official injured this run). Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,351 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,354 deaths, with 5,083 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
 https://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "1,351", label: "Confirmed dead" },
+  { value: "1,354", label: "Confirmed dead" },
   { value: "5,083", label: "Missing" },
   { value: "6,083", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
