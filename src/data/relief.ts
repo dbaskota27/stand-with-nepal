@@ -4,17 +4,17 @@ export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
 export const UPDATED_ON = "9 September 2026";
-export const FIGURES_AS_OF = "9 September 2026, 11:00 NPT";
-export const FIGURES_SOURCE = "NDRRMA + Nepal Police (Nepal-only)";
+export const FIGURES_AS_OF = "9 September 2026, 20:00 NPT";
+export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 9 September 2026, 11:00 NPT. Confirmed dead 1,367, missing 5,326, injured 7,151. Dead raised to 1,367 from NDRRMA (MoHA) via Ratopati as of Wednesday 11:00 NPT (district bodies Rasuwa 174 + Nuwakot 197 + Dhading 70 + Chitwan 363 + Gorkha 75 + Tanahun 38 + Nawalparasi East 226 + West 222 = 1,365, plus 2 hospital deaths in Kathmandu). Missing held at 5,326 (NDRRMA ~5,132 / police 4,077 — never lower; Wikipedia Nepal-only 5,326). Injured raised to 7,151 (NDRRMA via Ratopati Wednesday 11:00 NPT: 329 in hospitals + 3,535 Army + 3,287 APF). Nepal Police news/10370 still 1,365 as of Wednesday 14:00 NPT. Numbers are still changing.";
+  "Latest snapshot 9 September 2026, 20:00 NPT. Confirmed dead 1,372, missing 5,326, injured 7,151. Dead raised to 1,372 from Nepal Police news/10375 as of Wednesday 20:00 NPT (district bodies Rasuwa 178 + Nuwakot 197 + Dhading 70 + Chitwan 363 + Gorkha 77 + Tanahun 38 + Nawalparasi East 227 + West 222 = 1,372). Missing held at 5,326 (police 4,077 / NDRRMA ~5,132 — never lower; Wikipedia Nepal-only 5,326). Injured held at 7,151 (NDRRMA via Ratopati Wednesday 11:00 NPT; police bulletin has no higher injured total). Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,367 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,372 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
 https://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "1,367", label: "Confirmed dead" },
+  { value: "1,372", label: "Confirmed dead" },
   { value: "5,326", label: "Missing" },
   { value: "7,151", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
