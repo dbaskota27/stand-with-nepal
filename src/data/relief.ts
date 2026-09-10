@@ -5,18 +5,18 @@ export const PAGE_DESCRIPTION =
 
 export const UPDATED_ON = "10 September 2026";
 export const FIGURES_AS_OF = "10 September 2026, 11:00 NPT";
-export const FIGURES_SOURCE = "Nepal Police + NDRRMA (Nepal-only)";
+export const FIGURES_SOURCE = "NDRRMA + Nepal Police (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 10 September 2026, 11:00 NPT. Confirmed dead 1,374, missing 5,326, injured 7,474. Dead raised to 1,374 from Nepal Police news/10378 as of Thursday 11:00 NPT (district bodies Rasuwa 178 + Nuwakot 197 + Dhading 70 + Chitwan 364 + Gorkha 77 + Tanahun 38 + Nawalparasi East 228 + West 222 = 1,374). Missing held at 5,326 (police 4,089 / NDRRMA 5,132 / Wikipedia Nepal-only 5,132 / IFRC 5,132 — never lower). Injured held at 7,474 from NDRRMA via Ratopati Wednesday 18:00 NPT (333 hospitals + 3,535 Army + 3,606 APF). Numbers are still changing.";
+  "Latest snapshot 10 September 2026, 11:00 NPT. Confirmed dead 1,377, missing 5,326, injured 7,498. Dead raised to 1,377 from NDRRMA via Ratopati as of Thursday 11:00 NPT (district bodies Chitwan 364 + Nawalparasi East 228 + West 222 + Nuwakot 198 + Rasuwa 178 + Gorkha 77 + Dhading 70 + Tanahun 38 + Kathmandu treatment 2 = 1,377). Missing held at 5,326 (police 4,089 / NDRRMA 5,130 / Wikipedia Nepal-only 5,132 — never lower). Injured raised to 7,498 from NDRRMA via Ratopati Thursday 11:00 NPT (333 hospitals + 3,559 Army + 3,606 APF). Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,374 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
+  "Catastrophic flash floods hit Nepal’s Himalayas on 26 August. Official Nepal-only figures: 1,377 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister’s Disaster Relief Fund:
 https://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "1,374", label: "Confirmed dead" },
+  { value: "1,377", label: "Confirmed dead" },
   { value: "5,326", label: "Missing" },
-  { value: "7,474", label: "Injured" },
+  { value: "7,498", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
 ] as const;
 
