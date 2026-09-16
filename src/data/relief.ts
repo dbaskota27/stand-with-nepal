@@ -3,17 +3,17 @@ export const PAGE_TITLE = "Stand With Nepal — Flash Flood Relief 2026";
 export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
-export const UPDATED_ON = "15 September 2026";
-export const FIGURES_AS_OF = "15 September 2026, 20:00 NPT";
-export const FIGURES_SOURCE = "Nepal Police news/10441 + held floors (Nepal-only)";
+export const UPDATED_ON = "14 September 2026";
+export const FIGURES_AS_OF = "14 September 2026, 11:00 NPT";
+export const FIGURES_SOURCE = "Nepal Police news/10422 + held floors (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 15 September 2026, 20:00 NPT. Confirmed dead 1,403, missing 5,326, injured 7,498. Dead raised to 1,403 from Nepal Police news/10441 (Tuesday 20:00 NPT; district body count 1,401 + 2 Kathmandu treatment deaths). Missing held at 5,326 (police 4,089 / NDRRMA IFRC 5,130 \u2014 never lower). Injured held at 7,498 (NDRRMA IFRC injured 337 below floor). Numbers are still changing.";
+  "Latest snapshot 14 September 2026, 11:00 NPT. Confirmed dead 1,392, missing 5,326, injured 7,498. Dead raised to 1,392 from Nepal Police news/10422 (Monday 11:00 NPT district body count; Nawalparasi East 232). Missing held at 5,326 (police 4,089 / NDRRMA IFRC 5,130 \u2014 never lower). Injured held at 7,498 (NDRRMA IFRC injured 337 below floor). Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal\u2019s Himalayas on 26 August. Official Nepal-only figures: 1,403 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister\u2019s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
+  "Catastrophic flash floods hit Nepal\u2019s Himalayas on 26 August. Official Nepal-only figures: 1,392 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister\u2019s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
 
 export const stats = [
-  { value: "1,403", label: "Confirmed dead" },
+  { value: "1,392", label: "Confirmed dead" },
   { value: "5,326", label: "Missing" },
   { value: "7,498", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
