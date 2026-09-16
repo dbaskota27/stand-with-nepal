@@ -3,18 +3,18 @@ export const PAGE_TITLE = "Stand With Nepal — Flash Flood Relief 2026";
 export const PAGE_DESCRIPTION =
   "Help families after the 26 August 2026 Himalayan flash floods in Nepal. Official casualty figures from Nepal Police. Donate through the Government of Nepal Prime Minister’s Disaster Relief Fund.";
 
-export const UPDATED_ON = "16 September 2026";
-export const FIGURES_AS_OF = "16 September 2026, 20:00 NPT";
-export const FIGURES_SOURCE = "Nepal Police news/10454 + held floors (Nepal-only)";
+export const UPDATED_ON = "17 September 2026";
+export const FIGURES_AS_OF = "16 September 2026, NDRRMA missing revision";
+export const FIGURES_SOURCE = "NDRRMA missing 6,150 + Nepal Police dead floor (Nepal-only)";
 export const FIGURES_NOTE =
-  "Latest snapshot 16 September 2026, 20:00 NPT. Confirmed dead 1,409, missing 5,326, injured 7,498. Dead raised to 1,409 from Nepal Police news/10454 (Wednesday 20:00 NPT; district body count 1,407 + 2 Kathmandu treatment deaths). Missing held at 5,326 (police 4,089 / NDRRMA IFRC 5,130 \u2014 never lower). Injured held at 7,498 (NDRRMA IFRC injured 337 below floor). Numbers are still changing.";
+  "Latest snapshot 16\u201317 September 2026. Confirmed dead 1,409, missing 6,150, injured 7,498. Missing raised to 6,150 from NDRRMA verified district data (AFP / CNA / Nepal News, Wed 16 Sep). Dead held at 1,409 from Nepal Police news/10454 (Wed 20:00 NPT). Injured held at 7,498. Numbers are still changing.";
 
 export const SHARE_TEXT =
-  "Catastrophic flash floods hit Nepal\u2019s Himalayas on 26 August. Official Nepal-only figures: 1,409 deaths, with 5,326 people still missing. Donate only through the official Government of Nepal Prime Minister\u2019s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
+  "Catastrophic flash floods hit Nepal\u2019s Himalayas on 26 August. Official Nepal-only figures: 1,409 deaths, with 6,150 people still missing. Donate only through the official Government of Nepal Prime Minister\u2019s Disaster Relief Fund:\nhttps://pmdrf.nchl.com.np/";
 
 export const stats = [
   { value: "1,409", label: "Confirmed dead" },
-  { value: "5,326", label: "Missing" },
+  { value: "6,150", label: "Missing" },
   { value: "7,498", label: "Injured" },
   { value: "14", label: "Hydropower plants damaged" },
 ] as const;
