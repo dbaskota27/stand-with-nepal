@@ -12,10 +12,10 @@ export type CasualtySnapshot = CasualtyCounts & {
 
 export const POLICE_SNAPSHOT: CasualtySnapshot = {
   dead: 1409,
-  missing: 5326,
+  missing: 6150,
   injured: 7498,
-  source: "Dead raised to 1,409 \u2014 Nepal Police news/10454 Bhotekoshi flood update (as of Wednesday 16 September 2026, 20:00 NPT; district bodies Rasuwa 199 + Nuwakot 202 + Dhading 72 + Chitwan 364 + Gorkha 78 + Tanahun 38 + Nawalparasi East 232 + West 222 = 1,407, plus 2 deaths during treatment in Kathmandu = 1,409). Missing held 5,326 (police 4,089 / NDRRMA IFRC 5,130 \u2014 never lower). Injured held 7,498 (NDRRMA IFRC injured 337 below floor \u2014 never lower). IFRC GO 8073 key_figures 1,388/5,130/337 (updated 2026-09-15T05:31:14Z). NDRRMA press 1,399/5,179 below floor. Wikipedia Nepal-only stub unusable.",
-  asOf: "2026-09-16T20:00:00+05:45",
+  source: "Missing raised to 6,150 \u2014 NDRRMA verified district revision (spokesperson Shanti Mahat to AFP, Wed 16 Sep 2026; previously 5,179 then held floor 5,326). Dead held 1,409 (Nepal Police news/10454 Wed 20:00 NPT; district bodies 1,407 + 2 Kathmandu treatment deaths \u2014 never lower; NDRRMA bodies 1,403 + 2 treatment = 1,405 below floor). Injured held 7,498 (no higher clear police/NDRRMA/IFRC injured; Wikipedia 9,287 appears to confuse army deployment count \u2014 not used). Wikipedia Nepal-only 1,403 dead / 6,150 missing. Police missing search still 4,089 \u2014 never lower.",
+  asOf: "2026-09-16T23:59:00+05:45",
   live: false,
 };
 
