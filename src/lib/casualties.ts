@@ -11,11 +11,11 @@ export type CasualtySnapshot = CasualtyCounts & {
 };
 
 export const POLICE_SNAPSHOT: CasualtySnapshot = {
-  dead: 1410,
+  dead: 1411,
   missing: 6150,
   injured: 7498,
-  source: "Dead raised to 1,410 \u2014 Nepal Police news/10470 (Thu 17 Sep 2026 17:00 NPT): district bodies Rasuwa 199 + Nuwakot 203 + Dhading 72 + Chitwan 364 + Gorkha 78 + Tanahun 38 + Nawalparasi East 232 + West 222 = 1,408 + 2 Kathmandu treatment deaths. Missing held 6,150 (NDRRMA verified district revision Wed 16 Sep; police missing search still 4,089 \u2014 never lower). Injured held 7,498 (no higher clear police/NDRRMA/IFRC injured; Wikipedia 9,287 not used). NDRRMA/Wikipedia Nepal-only bodies 1,403 below floor. IFRC GO 8073 still 1,388/5,130/337 (updated 2026-09-15T05:31Z).",
-  asOf: "2026-09-17T17:00:00+05:45",
+  source: "Dead raised to 1,411 — Nepal Police news/10486 (Sat 19 Sep 2026 11:00 NPT): district bodies Rasuwa 199 + Nuwakot 203 + Dhading 72 + Chitwan 364 + Gorkha 79 + Tanahun 38 + Nawalparasi East 232 + West 222 = 1,409 + 2 Kathmandu treatment deaths. Missing held 6,150 (latest NDRRMA update 1,410/6,145 is below floor; police missing search 4,090 — never lower). Injured held 7,498 (no higher clear police/NDRRMA/IFRC injured; Wikipedia 9,287 not used). IFRC GO 8073 below floor (1,388/5,130/337).",
+  asOf: "2026-09-19T11:00:00+05:45",
   live: false,
 };
 
